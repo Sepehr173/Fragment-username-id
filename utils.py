@@ -40,3 +40,6 @@ async def send_to_channel(bot, username, price, image_path):
     caption = f"🔹 یوزرنیم: @{username}\n💰 قیمت پیشنهادی: {price}"
     await bot.send_photo(chat_id=CHANNEL_ID, photo=InputFile(image_path), caption=caption)
     os.remove(image_path)
+
+if __name__ == "__main__":
+    bot.infinity_polling()
