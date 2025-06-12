@@ -22,5 +22,7 @@ def handle_username(message):
         bot.send_photo(message.chat.id, img, caption=f"ارزیابی برای {username}:\nامتیاز: {score}\n{info}")
 
 bot.polling()
+
+
 if __name__ == "__main__":
     bot.infinity_polling()
