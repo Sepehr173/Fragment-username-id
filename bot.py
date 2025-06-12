@@ -2,7 +2,7 @@ import telebot
 import os
 from utils import generate_username_image, evaluate_username
 
-bot = telebot.TeleBot(os.getenv("8140626997:AAGVJMOoSWPfYBzubK51beuDqNVnCTfsLbM"))
+bot = telebot.TeleBot("8140626997:AAGVJMOoSWPfYBzubK51beuDqNVnCTfsLbM")
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
